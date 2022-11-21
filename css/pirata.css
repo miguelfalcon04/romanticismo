@@ -1,0 +1,25 @@
+/*******************************************************/
+/*  Web del romanticismo-hoja de estilo de autores     */
+/*  Autor: Miguel Falcón                               */
+/*  versión 1.0 - 7/11/2022                           */
+/*******************************************************/
+
+/************* estilo general *******************/
+
+@font-face{
+    font-family: escritura;
+    src:url(../fonts/GreatVibes-Regular.ttf)
+}
+
+body {font-family: escritura;
+    font-size: 1.2rem;
+    background-image: url('../images/patronpirata.jpg');
+    background-repeat: repeat-y;
+    background-size: 15%;
+    background-color: #BA9D6F;
+    /* background-position: bottom right; */
+}
+
+#wrapper {margin-left: 20%;
+    color: #253A59;
+}

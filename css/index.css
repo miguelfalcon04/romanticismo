@@ -1,0 +1,142 @@
+/************************************************************************************************/
+/*  Web del romanticismo-hoja de estilo de index                                                */
+/*  Autor: Miguel Falcón                                                                        */
+/*  versión 1.0 - 7/11/2022                                                                     */
+/************************************************************************************************/
+
+/************* estilo general *******************/
+
+/***** aqui van las fuentes ******/
+@font-face {
+    font-family: titulos;
+    src: url(../fonts/GreatVibes-Regular.ttf);
+}
+
+@font-face {
+    font-family: texto;
+    src: url(../fonts/FaunaOne-Regular.ttf);
+}
+
+*{box-sizing: border-box ;}
+body{
+    background-color: rgb(179, 122, 232); /*luego lo quito*/
+    font-family: texto;
+}
+
+
+#wrapper{
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    margin: auto;
+}
+
+/******* HERO SECTION VERSION 1 ********/
+
+#hero{
+    background-image: url('../images/hero.jpg'); /* pongo foto*/
+    height: 90vh;                                /*dimensiono el alto */
+    background-repeat: no-repeat;                /* evito la repetición */
+    background-size: cover;                      /* la ajusto al espacio disponible */
+    background-position: center;                 /* para no recortar la figura principal */
+
+    font-family: titulos;
+    font-size: 3.5rem;                           /* agrando porque la fuente sale más pequeña */
+    text-align: center;
+    padding-top: 20px;
+}
+
+#titulo{
+    background-color: rgb(255,255,255,0.5);
+    backdrop-filter: blur(5px); /* al fonde se le aplica un filtro */
+    border-radius: 50%;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    margin-top:20%;
+}
+
+/******* HERO SECTION VERSION 2 ********/
+
+#myVideo {
+    /* position: fixed; */
+    position: relative;     /* el título estás al mismo nivel que el video no dentro */
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#titulo2{
+    /* position: fixed; */
+    position: relative;
+    top: -28vh;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+}
+
+/******* HERO SECTION VERSION 3 ********/
+
+#hero3{
+    background-color: #0099ff; /* esto es un rectangulo azul */
+    height: 40vh;
+    position: relative;
+}
+
+#titulo3{
+    position: absolute;
+    top: 50%;
+        /*** TRUCO DEL ALMENDRUCO ***/
+    transform: translate(-50%,-50%);
+    left: 50%;
+    font-family: titulos;
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+}
+
+/******* HERO SECTION VERSION 4 CON UNA IMAGEN DE HAIKEI.APP ********/
+
+#hero4{
+    background-image: url(../images/svg.svg);
+    height: 80vh;
+    background-repeat: no-repeat; /* Para que no se repite */
+    background-size: cover; /* Para que ocupe todo el fondo */
+}
+
+#titulo4{
+    font-size: 3rem; 
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.5); 
+    backdrop-filter: blur(3px);
+    width: 50%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%); /* si quiero que este en medio */
+    padding: 20px;
+    
+}
+
+
+
+
+
+/******* MEDIA QUERIES ********/
+
+@media only screen and (width<=1000px){
+
+    #wrapper{
+        width: 100%;
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (width<=600px){
+
+    #titulo{
+        width: 80%;
+    }
+}

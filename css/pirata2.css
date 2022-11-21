@@ -1,0 +1,43 @@
+/************************************************************************************************/
+/*  Web del romanticismo-hoja de estilo de autores - hoja de estilo de poemas con foto de fondo */
+/*  Autor: Miguel Falcón                                                                        */
+/*  versión 1.0 - 7/11/2022                                                                     */
+/************************************************************************************************/
+
+/************* estilo general *******************/
+
+@font-face{
+    font-family: escritura;
+    src:url(../fonts/GreatVibes-Regular.ttf)
+}
+
+body{
+    font-family: escritura;
+    font-size: 1.2em;
+    /* ahora colocamos una sola imagen de buena calidad de fondo */
+    background-image: url(../images/wallpaper.jpg);
+    background-color: #342410;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#wrapper{
+    color: #bb3131;
+    margin-left: 5%;
+}
+
+/* el vinculo tiene un color por defecto, lo desactivamos y colocamos el buestro */
+/* el selector a está "puesto en contexto": a dentro de #wrapper */
+
+#wrapper a {
+    color: #bb3131;
+}
+
+/* a:hover es una PSEUDOCLASE: al poner el ratón encima, hay un comportamiento 
+    dinámico desde el estilo, sin necesidad de javascript */
+
+
+#wrapper a:hover{color: rgb(48, 81, 104);}
+
+
+.fa{font-size:200% !important;}
