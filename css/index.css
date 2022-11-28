@@ -6,7 +6,7 @@
 
 /************* estilo general *******************/
 
-/***** aqui van las fuentes ******/
+/* aqui van las fuentes */
 @font-face {
     font-family: titulos;
     src: url(../fonts/GreatVibes-Regular.ttf);
@@ -30,6 +30,18 @@ body{
     margin: auto;
 }
 
+/* titulo de secciones*/
+
+.titulo-seccion{
+    font-family: titulos;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bold;
+    color: darkred;
+    padding: 4% 0;
+}
+
+
 /******* HERO SECTION VERSION 1 ********/
 
 #hero{
@@ -43,6 +55,7 @@ body{
     font-size: 3.5rem;                           /* agrando porque la fuente sale más pequeña */
     text-align: center;
     padding-top: 20px;
+    color: rgb(90, 0, 0);
 }
 
 #titulo{
@@ -120,9 +133,165 @@ body{
     
 }
 
+/******* SECTION INTRODUCCION ********/
+
+#texto{
+    margin: auto;
+    padding: 2%;
+}
+
+p{
+    text-align: justify;
+    text-indent: 2em;
+}
+
+
+/******* SECTION IDEAS ********/
+
+#ideas {background-color: #f1f1f1;}
+
+/* contenedor grid */
+.grid2{
+    display: grid;
+    grid-template-columns: 50% 50%; /* Con "auto" lo divide el mismo*/
+}
+
+/* que corra el aire (ver box-sizing arriba) */
+.texto{
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+.texto li{
+    margin-bottom: 12px;
+}
+
+/* selector combinado (img DENTRO de .col2) */
+.col2 img{width: 100%;}
 
 
 
+/******* SECTION AUTORES ********/
+
+.grid4{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.col4{
+    padding: 20px;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+    text-align: center;
+  }
+
+.col4 img{ /* selector contextual, solo para las img que estén DENTRO de una card */
+    width: 100%;
+    filter: sepia(); /* opcional */
+    opacity: 0.7;    /* opcional, para hacer un efecto dinámico con el ratón  */ /*CONJUNTO*/
+    transition: 1s;  /* Cualquier cosa que pueda cambias dinamicamente, tarda 1 segundo */
+    padding: 4%;     /* efecto polaroid */
+    border-radius: 50%; /* efecto ovalado */
+}
+
+.card img:hover{
+    opacity: 1;       /* al poner el ratón encima, se define completamento la imagen */ /*CONJUNTO*/
+}
+
+.card a{
+    text-decoration: none; /* TODO ESTO PARA CONSEGUIR EFECTO BOTÓN */
+    font-weight: bold;
+    background-color: rgb(80, 80, 80);
+    transition: 0.5s;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: inline-block; /* separa el bloque superior y el inferior, pero no acupa el espacio de punta a punta; 
+                            si hubiera otro inline-block lo pondría a continuación...
+                            *** ES LO QUE SE USA EN LAS BARRAS DE NAVEGACIÓN ***/
+}
+
+.card a:hover{
+    background-color: rgb(150, 150, 150); /* para que el boton cambie al poner el ratón encima */
+    color: black;
+}
+
+/******* FOOTER CON GRID DE 3 COLUMNAS 25 25 50 ********/
+
+footer{
+    background-color: rgb(183, 183, 183);
+}
+.grid3{
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+}
+
+.col3 {
+    padding: 6%;
+}
+
+.col3 img{
+    width: 30%;
+}
+
+.fa {
+    padding: 15px;   /*************/
+    font-size: 20px; /************/
+    width: 50px; 
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%; /************/
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
 
 /******* MEDIA QUERIES ********/
 
@@ -130,7 +299,15 @@ body{
 
     #wrapper{
         width: 100%;
-        font-size: 2.5rem;
+        font-size: 2rem;
+    }
+
+    .grid2{
+        grid-template-columns: 100%; /* el grid pasa a ser de 1 columna en tablets */
+    }
+
+    .grid4{
+        grid-template-columns: 50% 50%; /* el grid pasa a ser de 22 columna en tablets */
     }
 }
 
@@ -138,5 +315,9 @@ body{
 
     #titulo{
         width: 80%;
+    }
+
+    .grid4{
+        grid-template-columns: 100%;
     }
 }

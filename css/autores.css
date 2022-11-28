@@ -25,6 +25,7 @@ body{font-family: texto;
 
 #wrapper{
         width:80%;
+        min-height: 100vh; /* obligo a un alto mínimo pero no máximo */
         background-color: bisque;
         margin: auto;
         padding: 2%;

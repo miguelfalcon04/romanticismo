@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web del Romanticismo</title>
+    <!-- enlazo font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- enlazo la hoja de estilo -->
     <link rel="stylesheet" href="./css/index.css">
+    <!-- enlazo el favicon -->
+    <link rel="shortcut icon" href="=./images/apache.ico" type="image/x-icon">
 
 </head>
 <body>
@@ -16,7 +21,7 @@
         botones de navegación
         </nav>
 
-        <!--
+        
         <section id="hero"> 
         
         <div id="titulo">
@@ -25,21 +30,21 @@
         </p>
         </div>
         </section>
-    -->
+    
 
-        <!-- con video-->
+    <!-- con video--> 
+    <!-- 
         <section id="hero2">
             <video autoplay controls loop id="myVideo">
-            <source src="./video/videohero.mp4" type="video/mp4">
+                <source src="./video/videohero.mp4" type="video/mp4">
             </video>
             <div id="titulo2">
                 <h1>Heading</h1>
                 <p>Lorem ipsum...</p>
-                <!-- Use a button to pause/play the video with JavaScript -->
                 <button id="myBtn" onclick="myFunction()">Pause</button>
             </div>
         </section>
-        
+    -->
 
         <!--
         <section id="hero3">
@@ -65,22 +70,173 @@
 
         <section id="intro"> 
         <!-- que es el romanticismo -->
-        introducción al romanticismo
+        <div class="titulo-seccion">
+            Introducción
+        </div>
+
+        <div id="texto">
+        <p>El romanticismo es un movimiento artístico y literario que surgió entre finales del 
+        siglo XVIII y comienzos del siglo XIX en Alemania e Inglaterra. Desde allí se extendió 
+        a toda Europa y América.</p>
+
+        <p>El movimiento romántico está basado en la expresión de la subjetividad y la libertad
+        creadora en oposición al academicismo y el racionalismo del arte neoclásico.</p>
+
+        <p>Tiene su origen en la influencia del movimiento germánico Sturm und Drang (que significa ‘tormenta e ímpetu’),
+        desarrollado entre 1767 y 1785, el cual reaccionaba contra el racionalismo ilustrado.</p>
+
+        <p>Impulsado por el Sturm und Drang, el romanticismo rechazó la rigidez académica del neoclasicismo
+        que, para entonces, había ganado la reputación de frío y servil al poder político.</p>
+        </div>
+
         </section>
 
+
+        <!--******************* IDEAS *******************-->
+
+        <!-- vamos a construir un grid de 2 columnas paralelas -->
         <section id="ideas">
-        <!-- cuales son los principios del movimiento -->
-        ideas principales
+            <!-- antes del grid-->
+            <div class="titulo-seccion">
+                Ideas
+            </div>
+
+        <!-- div.grid2>div.col2*2 -->
+            <div class="grid2">
+                <div class="col2 imagen">
+                    <img src="./images/faro.jpg" alt="El faro de Turner">
+                </div>
+
+                <div class="col2 texto">
+                    <ul>
+                    <li>Subjetividad vs. objetividad: se enfocaron en los sentimientos intensos y místicos, como miedo,
+                    pasión, locura y soledad</li> 
+                    
+                    <li>Imaginación vs. inteligencia: revalorizaron el papel de la imaginación en el arte en cualquier de
+                    las disciplinas artísticas</li> 
+
+                    <li>Lo sublime vs. belleza clásica: lo sublime se entendía como la percepción de la grandeza absoluta de
+                    lo contemplado</li> 
+
+                    <li>Individualismo: el romántico procura la expresión del yo, el reconocimiento de la identidad individual,
+                    de la singularidad</li> 
+
+                    <li>Nacionalismo: el nacionalismo fue la expresión colectiva de la búsqueda de la identidad del individuo.
+                    De allí el interés por el folclore</li> 
+                </ul>
+                </div>
+
+                <div class="col2 texto">
+                    <ul>
+                        <li>Liberación de las reglas academicistas: subordinan la técnica a la expresión individual
+                        y no al contrario.</li>
+                        
+                        <li>Redescubrimiento de la naturaleza: se convierte al paisaje en una metáfora del mundo interior y una fuente
+                        de inspiración</li>
+                        
+                        <li>Carácter visionario u onírico: sueños, pesadillas, fantasías y fantasmagorías, donde la imaginación se libera
+                        de lo racional</li>
+                        
+                        <li>Nostalgia por el pasado:  sienten que con la modernización se han perdido la unidad entre el hombre y la
+                        naturaleza, e idealizan el pasado</li>
+                        
+                        <li>Idea de genio atormentado e incomprendido: se le distingue por su imaginación y originalidad y, también, por
+                        la narrativa de una vida atormentada.</li>
+                    </ul>
+                </div>
+
+                <div class="col2 imagen">
+                    <img src="./images/medusa.jpg" alt="imagen medusa">
+                </div>
+
+                </div>
         </section>
+
+
+        <!--******************* AUTORES *******************-->
 
         <section id="autores">
         <!-- recopilación de autores -->
-        vida y obra de varios autores
+        <div class="titulo-seccion">
+            Autores
+        </div>
+            <div class="grid4">
+                <div class="col4">
+                <!-- meto un card -->
+                    <div class="card">
+                        <img src="./images/espronceda.jpg" alt="José de Espronceda">
+                        <div class="container">
+                          <h4><b>José de<br>Espronceda</b></h4>
+                          <p>Poeta</p>
+                          <a href="./espronceda.html">Leer más</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col4">
+                <!-- meto un card -->
+                    <div class="card">
+                        <img src="./images/becquer.jpg" alt="Gustabo Adolfo Becquer">
+                        <div class="container">
+                          <h4><b>Gustabo Adolfo<br>Béquer</b></h4>
+                          <p>Poeta</p>
+                          <a href="#">Leer más</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col4">
+                <!-- meto un card -->
+                <div class="card">
+                    <img src="./images/larra.jpg" alt="Mariano José Larra">
+                    <div class="container">
+                      <h4><b>Mariano Larra<br>de Larra</b></h4>
+                      <p>Articulista</p>
+                      <a href="#">Leer más</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col4">
+                <!-- meto un card -->
+                <div class="card">
+                    <img src="./images/zorrilla.jpg" alt="José Zorrilla">
+                    <div class="container">
+                      <h4><b>José<br>Zorrilla</b></h4>
+                      <p>Dramaturgo</p>
+                      <a href="#">Leer más</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!-- PARA QUE LAS CARDS SALGAN BIEN SE RETOCAN PREVIAMENTE O SE LE APORTA UN ALTO MÁXIMO -->
+        
         </section>
 
+        <!--******************* FOOTER *******************-->
+
+        <section id="footer">
         <footer> 
-        Footer 
+        <div class="grid3">
+            <div class="col3">
+                <img src="./images/favicon.jpg" alt="plof">
+            </div>
+            <div class="col3">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt molestiae ducimus mollitia eveniet. Dolor perferendis
+                blanditiis enim repellendus,cum sint quas laborum consequatur iure voluptatum corrupti placeat tempore accusantium neque?
+                AQUÍ REPETIRÉ LA BARRA DE NAVEGACIÓN EL PRÓXIMO DÍA
+            </div>
+            <div class="col3">
+                <p>Síguenos en redes sociales</p>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+            
+        </div>
         </footer>
+    </section>
+
     </div>
     
 </body>
